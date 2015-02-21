@@ -1,0 +1,23 @@
+<div class="header">
+    <div class="container_header">
+        <div class="logo_with">
+            <%= link_to image_tag("logo1.png"), root_path %>
+
+
+            <div class="login_registation">
+                <a class="button btn-primary custom_home_btn" href=""> Download the app </a>
+                <label>&nbsp;&nbsp;&nbsp;</label>|
+                <% if user_signed_in? %>
+                    Logged in as <strong><%= current_user.email %></strong>.
+                    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+                    <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                <% else %>
+                    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+                    <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                <% end %>
+
+            </div>
+        </div>
+
+    </div>
+</div>
