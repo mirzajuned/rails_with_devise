@@ -44,3 +44,7 @@ group :development, :test do
   gem 'devise'
 end
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'font-awesome-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14'

@@ -17,7 +17,7 @@ development:
   encoding: utf8 
   encoding: utf8
   reconnect: false
-  database: rails_with_devise
+  database: nexthalt
   pool: 5
   username: root
   password: admin
@@ -30,7 +30,7 @@ test:
   encoding: utf8
   encoding: utf8
   reconnect: false
-  database: rails_with_devise
+  database: nexthalt
   pool: 5
   username: root
   password: admin
@@ -81,7 +81,7 @@ production:
   encoding: utf8
   encoding: utf8
   reconnect: false
-  database: rails_with_devise
+  database: nexthalt
   pool: 5
   username: root
   password: admin

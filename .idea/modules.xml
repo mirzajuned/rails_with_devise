@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rails_with_devise.iml" filepath="$PROJECT_DIR$/rails_with_devise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nexthalt.iml" filepath="$PROJECT_DIR$/nexthalt.iml" />
     </modules>
   </component>
 </project>

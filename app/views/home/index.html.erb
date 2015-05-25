@@ -1,62 +1,676 @@
 
+<section id="main-slider" class="no-margin">
+<div class="carousel slide">
+<ol class="carousel-indicators">
+    <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+    <li data-target="#main-slider" data-slide-to="1"></li>
+    <!--   <li data-target="#main-slider" data-slide-to="2"></li>-->
+</ol>
+<div class="carousel-inner">
+<div class="item active" style="background-image: url(/assets/1.jpg)">
 
-<div class="container_box">
-    <div class="form_for">
-        <form>
-            <div class="user_name"> Service Type:</div>
-
-            <select class="select_box">
-                <option value=" Bangalore">Auto</option>
-                <option value="Bangalore">Stitch</option>
-
-
-            </select>
-            <br>
-            <div class="user_name">Name</div>
-            <input type="text" name="pickupaddress:" placeholder="Name">
-            <br>
-
-            <label for="demo1" class="user_name">Pickup Date </label><br>
-            <input type="Text" id="demo1" maxlength="25" size="25" placeholder="Pickup Date"/>
-            <img src="/cal.gif" onclick="javascript:NewCssCal('demo1')" style="cursor:pointer"/>
-
-            <br>
-            <div class="user_name">contact Number:</div>
-
-            <input type="text" name="contactnumber" placeholder="Enter Your Contact NUmber">
-            <br>
-            <div class="user_name">Select City:</div>
-
-            <select class="select_box">
-                <option value=" Bangalore">Bangalore</option>
-                <option value="Bangalore">Delhi</option>
-                <option value="Bangalore">Mumbai</option>
-
-            </select>
-            <br>
-            <div class="user_name">Pickup Address:</div>
-            <input type="text" name="pickupaddress:" placeholder="Enter Your  Pickup Address">
-            <br>
-
-            <div class="user_name">Select City:</div>
-            <select class="select_box">
-                <option value=" Bangalore">Bangalore</option>
-                <option value="Bangalore">Delhi</option>
-                <option value="Bangalore">Mumbai</option>
-
-            </select>
-            <br>
-            <div class="user_name">Delivery Address:</div>
-            <input type="text" name="deliveryaddress" placeholder="Enter Your Delivery Address"><br>
-            <input type="button" class="custom_home_btn11" value="Send" />
-        </form>
-
-    </div>
-    <div class="form_for">
-        <div class="divide">
-
+<div class="container">
+<div class="col-sm-9">
+    <div class="bannerTitleDiv">
+        <div id="tagline1" class="tagline">
+            <span>It's time to</span>
+            <ul>
+                <li class="active">relax</li>
+                <li class="">being lost</li>
+            </ul>
         </div>
+    </div>
+</div>
 
-        <div class="track">  <input type="text" name="pickupaddress:"  placeholder="Enter Your Code"><input type="button" class="custom_home_btn11" value="Track Your Order" /></div>
+<div class="col-sm-3">
+    <div class="weatherDivOnBanner">
+        <div id="weather" class="weather"></div>
+    </div>
+</div>
+<div class="bannerContainer">
+<div class="row">
+<div class="col-sm-12">
+<div class="bannerMenuPanel">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#hotel" data-toggle="tab"><i
+        class="fa fa-building-o"></i>
+            <span>Hotel</span></a>
+        </li>
+        <li><a href="#activity" data-toggle="tab"><i class="fa fa-bolt"></i>
+            <span>Activity</span></a>
+        </li>
+    </ul>
+</div>
+<div class="menuTextContainer">
+<div class="tab-content">
+
+<div class="tab-pane fade active in" id="hotel">
+    <div class="col-sm-12">
+        <div class="tabPanTitle">
+            <h4>Search and Save on Hotels</h4>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <form>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <i class="fa fa-map-marker input-icon"></i>
+                    <label for="location">Where</label>
+                    <input type="text" class="datetimeForm" id="location"
+                           placeholder="City Name or Zip code">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                    <label for="">Check in</label>
+
+                    <div class="controls input-append date form_date"
+                         data-date=""
+                         data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2"
+                         data-link-format="yyyy-mm-dd">
+                        <input class="datetimeForm" size="16" type="text" placeholder="dd / MM / yy"
+                               value="">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('.form_date').datetimepicker({
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0
+                    });
+                </script>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <div class="controls input-append date form_date"
+                         data-date=""
+                         data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2"
+                         data-link-format="yyyy-mm-dd">
+                        <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                        <label for="checkOut">Check out</label>
+                        <input class="datetimeForm" id="checkOut" size="16" placeholder="dd / MM / yy "
+                               type="text" value="">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('.form_date').datetimepicker({
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0
+                    });
+                </script>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group form-group-lg form-group-select-plus">
+                    <label>Rooms</label>
+
+                    <div id="roomList" data-toggle="buttons"
+                         class="btn-group btn-group-select-num ">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options"
+                                   value="1">1</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options"
+                                   value="2">2</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options"
+                                   value="3">3</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="3Plus"
+                                   value="4">3+</label>
+                    </div>
+                    <select name="room_num_search" class="form-control" id="roomListId">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
+                    <script>
+                        $('#3Plus').change(
+                                function () {
+                                    var selectedValue = $(this).val();
+                                    //alert(selectedValue);
+                                    if (selectedValue == 5) {
+                                        $('#roomListId').show();
+                                        $('#roomList').hide();
+                                    }
+                                    else {
+                                        $('#roomList').show();
+                                        $('#roomListId').hide();
+
+                                    }
+                                }).change();
+                        /* $('#3Plus').click(function (e) {
+                         $('#roomListId').show();
+                         $('#roomList').hide();
+                         });*/
+
+                    </script>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group form-group-lg form-group-select-plus">
+                    <label>Adults</label>
+
+                    <div data-toggle="buttons"
+                         class="btn-group btn-group-select-num ">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="options"
+                                   value="1">1</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options"
+                                   value="2">2</label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options"
+                                   value="3">3</label>
+                        <label class="btn btn-primary ">
+                            <input type="radio" name="options"
+                                   value="4">3+</label>
+                    </div>
+                    <select name="room_num_search" class="form-control hidden ">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <button class="btn btn-search btn-lg" type="submit">Search for
+                    Hotels
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="tab-pane fade" id="activity">
+    <div class="col-sm-12">
+        <div class="tabPanTitle">
+            <h4>Find Your Perfect Activity</h4>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <form>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <i class="fa fa-map-marker input-icon"></i>
+                    <label for="address">Address</label>
+                    <input type="text" class="datetimeForm" id="address"
+                           placeholder="Activity">
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                    <label>From</label>
+
+                    <div class="controls input-append date form_date"
+                         data-date=""
+                         data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2"
+                         data-link-format="yyyy-mm-dd">
+                        <input class="datetimeForm" size="16" type="text" placeholder="dd / MM / yy "
+                               value="">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('.form_date').datetimepicker({
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0
+                    });
+                </script>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="controls input-append date form_date"
+                         data-date=""
+                         data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2"
+                         data-link-format="yyyy-mm-dd">
+                        <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                        <label>To</label>
+                        <input class="datetimeForm" size="16" placeholder="dd / MM / yy "
+                               type="text" value="">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('.form_date').datetimepicker({
+                        language: 'fr',
+                        weekStart: 1,
+                        todayBtn: 1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        minView: 2,
+                        forceParse: 0
+                    });
+                </script>
+            </div>
+            <div class="col-sm-12">
+                <button class="btn btn-search btn-lg" type="submit">Search for Activity</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="item" style="background-image: url(/assets/3.jpg)">
+<div class="container">
+<div class="col-sm-9">
+    <div class="bannerTitleDiv">
+        <div id="tagline2" class="tagline">
+            <span>It's time to</span>
+            <ul>
+                <li class="active">relax</li>
+                <!--<li class="">being lost</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-sm-3">
+    <div class="weatherDivOnBanner">
+        <div id="weather2" class="weather"></div>
+    </div>
+</div>
+<div class="bannerContainer">
+<div class="row">
+<div class="col-sm-12">
+<div class="bannerMenuPanel">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#hotel2" data-toggle="tab"><i
+        class="fa fa-building-o"></i>
+            <span>Hotel</span></a>
+        </li>
+        <li><a href="#activity2" data-toggle="tab"><i class="fa fa-bolt"></i>
+            <span>Activity</span></a>
+        </li>
+    </ul>
+</div>
+<div class="menuTextContainer">
+<div class="tab-content">
+
+    <div class="tab-pane fade active in" id="hotel2">
+        <div class="col-sm-12">
+            <div class="tabPanTitle">
+                <h4>Search and Save on Hotels</h4>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <form>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <i class="fa fa-map-marker input-icon"></i>
+                        <label for="location">Where</label>
+                        <input type="text" class="datetimeForm" id="location"
+                               placeholder="City Name or Zip code">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                        <label>Check in</label>
+
+                        <div class="controls input-append date form_date"
+                             data-date=""
+                             data-date-format="dd MM yyyy"
+                             data-link-field="dtp_input2"
+                             data-link-format="yyyy-mm-dd">
+                            <input class="datetimeForm" size="16" type="text" placeholder="dd / MM / yy"
+                                   value="">
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $('.form_date').datetimepicker({
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0
+                        });
+                    </script>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <div class="controls input-append date form_date"
+                             data-date=""
+                             data-date-format="dd MM yyyy"
+                             data-link-field="dtp_input2"
+                             data-link-format="yyyy-mm-dd">
+                            <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                            <label for="checkOut">Check out</label>
+                            <input class="datetimeForm" id="checkOut" size="16" placeholder="dd / MM / yy "
+                                   type="text" value="">
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $('.form_date').datetimepicker({
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0
+                        });
+                    </script>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group form-group-lg form-group-select-plus">
+                        <label>Rooms</label>
+
+                        <div id="roomList" data-toggle="buttons"
+                             class="btn-group btn-group-select-num ">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="options"
+                                       value="1">1</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options"
+                                       value="2">2</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options"
+                                       value="3">3</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="3Plus"
+                                       value="4">3+</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group form-group-lg form-group-select-plus">
+                        <label>Adults</label>
+
+                        <div data-toggle="buttons"
+                             class="btn-group btn-group-select-num ">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="options"
+                                       value="1">1</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options"
+                                       value="2">2</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options"
+                                       value="3">3</label>
+                            <label class="btn btn-primary ">
+                                <input type="radio" name="options"
+                                       value="4">3+</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <button class="btn btn-search btn-lg" type="submit">Search for
+                        Hotels
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="activity2">
+        <div class="col-sm-12">
+            <div class="tabPanTitle">
+                <h4>Find Your Perfect Activity</h4>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <form>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <i class="fa fa-map-marker input-icon"></i>
+                        <label for="address">Address</label>
+                        <input type="text" class="datetimeForm" id="address"
+                               placeholder="Activity">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                        <label>From</label>
+
+                        <div class="controls input-append date form_date"
+                             data-date=""
+                             data-date-format="dd MM yyyy"
+                             data-link-field="dtp_input2"
+                             data-link-format="yyyy-mm-dd">
+                            <input class="datetimeForm" size="16" type="text" placeholder="dd / MM / yy "
+                                   value="">
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $('.form_date').datetimepicker({
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0
+                        });
+                    </script>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="controls input-append date form_date"
+                             data-date=""
+                             data-date-format="dd MM yyyy"
+                             data-link-field="dtp_input2"
+                             data-link-format="yyyy-mm-dd">
+                            <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                            <label>To</label>
+                            <input class="datetimeForm" size="16" placeholder="dd / MM / yy "
+                                   type="text" value="">
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $('.form_date').datetimepicker({
+                            language: 'fr',
+                            weekStart: 1,
+                            todayBtn: 1,
+                            autoclose: 1,
+                            todayHighlight: 1,
+                            startView: 2,
+                            minView: 2,
+                            forceParse: 0
+                        });
+                    </script>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-search btn-lg" type="submit">Search for Activity</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/.item-->
+</div>
+</div>
+<!--/.carousel-->
+<a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+    <i class="icon-angle-left"></i>
+</a>
+<a class="next hidden-xs" href="#main-slider" data-slide="next">
+    <i class="fa fa-angle-right"></i>
+
+</a>
+</section>
+<!--/#main-slider-->
+
+
+<!-- Services -->
+<div class="section section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="service-wrapper">
+                    <i class="fa fa-home fa-5x"></i>
+
+
+                    <h3>Aliquam in adipiscing</h3>
+
+                    <p>Praesent rhoncus mauris ac sollicitudin vehicula. Nam fringilla turpis turpis, at posuere turpis
+                        aliquet sit amet condimentum</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service-wrapper">
+                    <i class="fa fa-briefcase fa-5x"></i>
+
+
+                    <h3>Curabitur mollis</h3>
+
+                    <p>Suspendisse eget libero mi. Fusce ligula orci, vulputate nec elit ultrices, ornare faucibus orci.
+                        Aenean lectus sapien, vehicula</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service-wrapper">
+                    <i class="fa fa-calendar fa-5x"></i>
+
+
+                    <h3>Vivamus mattis</h3>
+
+                    <p>Phasellus posuere et nisl ac commodo. Nulla facilisi. Sed tincidunt bibendum cursus. Aenean
+                        vulputate aliquam risus rutrum scelerisque</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Services -->
+
+<div class="section section-img">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1 style="color: #fff;font-size: 45px">Last Minute Deal</h1>
+            </div>
+            <div class="section-title">
+                <h1 style="color: #fff">Superior Hotel Paris - Single Room </h1>
+
+            </div>
+            <div class="section-title">
+
+                <h1 style="color: #fff;font-size: 30px;font-style: italic">Wednesday 04 Mar - Thursday 05 Mar</h1>
+            </div>
+            <div class="buttonDivCenter">
+                <button class="btn btn-search btn-lg" type="submit">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-white">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h1>Top Destination</h1>
+            </div>
+            <ul class="grid cs-style-3">
+                <div class="col-md-3 col-sm-6">
+
+                    <a class="hover-img curved" href="#">
+                        <img src="/assets/adv3.jpg" alt="img05" style="width: 100%">
+                    </a>
+
+                    <h3>India</h3>
+                    <span class="destinationBoxText">Cursus faucibus egestas rutrum mauris vulputate consequat ante </span>
+                    <a href="#">Take a look</a>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a class="hover-img curved" href="#">
+                        <img src="/assets/adv2.png" alt="img03" style="width: 100%">
+                    </a>
+
+                    <h3>Sydney</h3>
+                    <span class="destinationBoxText">Cursus faucibus egestas rutrum mauris vulputate consequat ante </span>
+                    <a href="#">Take a look</a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a class="hover-img curved" href="#">
+                        <img src="/assets/adv.jpeg" alt="img06" style="width: 100%">
+                    </a>
+
+                    <h3>Russia</h3>
+                    <span class="destinationBoxText">Cursus faucibus egestas rutrum mauris vulputate consequat ante</span>
+                    <a href="#">Take a look</a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <a class="hover-img curved" href="#">
+                        <img src="/assets/adv3.jpg" alt="img05" style="width: 100%">
+                    </a>
+
+                    <h3>New York City</h3>
+                    <span class="destinationBoxText">Cursus faucibus egestas rutrum mauris vulputate consequat ante </span>
+                    <a href="#">Take a look</a>
+                </div>
+            </ul>
+        </div>
     </div>
 </div>
